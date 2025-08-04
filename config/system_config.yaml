@@ -1,0 +1,83 @@
+# System Configuration for Dual Energy Source Management
+# =====================================================
+
+# Control Loop Settings
+control_loop_interval: 5  # seconds between AI decisions
+sensor_read_interval: 1   # seconds between sensor readings
+simulation_mode: true     # set to false for real hardware
+
+# Safety Thresholds
+safety:
+  solar:
+    min_voltage: 12.0      # Minimum solar voltage for operation
+    min_current: 0.5       # Minimum solar current for operation
+    max_voltage: 18.0      # Maximum safe solar voltage
+  
+  thermal:
+    min_voltage: 5.0       # Minimum thermal voltage for operation
+    min_temperature: 40.0  # Minimum thermal temperature for operation
+    max_temperature: 85.0  # Maximum safe thermal temperature
+  
+  battery:
+    min_voltage: 10.5      # Minimum battery voltage for operation
+    critical_voltage: 9.5  # Critical battery voltage (emergency)
+    max_temperature: 45.0  # Maximum safe battery temperature
+    critical_temp: 50.0    # Critical battery temperature
+
+# GPIO Pin Configuration (Raspberry Pi)
+gpio:
+  solar_relay: 18          # GPIO pin for solar relay control
+  thermal_relay: 19        # GPIO pin for thermal relay control
+  battery_relay: 20        # GPIO pin for battery relay control
+  emergency_shutdown: 21   # GPIO pin for emergency shutdown button
+
+# AI Model Settings
+ai_model:
+  confidence_threshold: 0.6    # Minimum confidence for source switching
+  use_tensorflow_model: false  # Use TensorFlow model if available
+  fallback_to_rules: true     # Fallback to rule-based system
+  update_frequency: 300       # Seconds between model updates
+
+# Data Logging
+logging:
+  database_path: "data/energy_system.db"
+  log_interval: 60           # Seconds between data log entries
+  max_log_size: 100          # MB before log rotation
+  backup_count: 5            # Number of backup log files
+
+# Web Dashboard
+web:
+  host: "0.0.0.0"           # Web server host (0.0.0.0 for all interfaces)
+  port: 5000                # Web server port
+  debug: false              # Flask debug mode
+  secret_key: "change_this_secret_key_in_production"
+
+# Hardware Calibration
+calibration:
+  voltage_divider_ratio: 5.0   # Voltage divider scaling factor
+  current_sensor_sensitivity: 0.1  # A/V for current sensors
+  temperature_offset: 0.0      # Temperature sensor offset correction
+
+# Energy Source Priorities (0 = highest priority)
+priorities:
+  solar: 0      # Highest priority when available
+  thermal: 1    # Second priority
+  battery: 2    # Backup priority
+
+# Performance Optimization
+optimization:
+  switching_hysteresis: 0.1    # Prevent rapid switching (confidence difference)
+  minimum_switch_interval: 30  # Minimum seconds between switches
+  energy_efficiency_weight: 0.7  # Weight for efficiency vs availability
+
+# Monitoring and Alerts
+monitoring:
+  enable_email_alerts: false
+  enable_sms_alerts: false
+  alert_cooldown: 300      # Seconds between repeated alerts
+  
+  thresholds:
+    battery_low: 20        # % - Battery low warning
+    battery_critical: 10   # % - Battery critical alert
+    temperature_high: 40   # °C - High temperature warning
+    voltage_deviation: 10  # % - Voltage deviation alert

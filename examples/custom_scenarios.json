@@ -1,0 +1,123 @@
+{
+  "test_scenarios": {
+    "sunny_afternoon": {
+      "solar_irradiance": 850,
+      "temperature": 28,
+      "humidity": 45,
+      "battery_level": 75,
+      "power_demand": 120,
+      "wind_speed": 3,
+      "time_of_day": 14,
+      "weather_condition": "sunny",
+      "description": "Perfect sunny afternoon with high solar availability"
+    },
+    
+    "cloudy_morning": {
+      "solar_irradiance": 200,
+      "temperature": 18,
+      "humidity": 80,
+      "battery_level": 60,
+      "power_demand": 90,
+      "wind_speed": 8,
+      "time_of_day": 8,
+      "weather_condition": "cloudy",
+      "description": "Overcast morning with limited solar power"
+    },
+    
+    "night_time_low_demand": {
+      "solar_irradiance": 0,
+      "temperature": 15,
+      "humidity": 70,
+      "battery_level": 85,
+      "power_demand": 60,
+      "wind_speed": 2,
+      "time_of_day": 23,
+      "weather_condition": "clear_night",
+      "description": "Nighttime with low power demand and good battery"
+    },
+    
+    "hot_summer_day": {
+      "solar_irradiance": 950,
+      "temperature": 38,
+      "humidity": 30,
+      "battery_level": 70,
+      "power_demand": 180,
+      "wind_speed": 12,
+      "time_of_day": 15,
+      "weather_condition": "very_sunny_hot",
+      "description": "Very hot summer day with high thermal potential"
+    },
+    
+    "low_battery_emergency": {
+      "solar_irradiance": 300,
+      "temperature": 22,
+      "humidity": 65,
+      "battery_level": 15,
+      "power_demand": 100,
+      "wind_speed": 5,
+      "time_of_day": 10,
+      "weather_condition": "partly_cloudy",
+      "description": "Low battery situation requiring careful energy management"
+    },
+    
+    "winter_evening": {
+      "solar_irradiance": 50,
+      "temperature": 5,
+      "humidity": 85,
+      "battery_level": 45,
+      "power_demand": 150,
+      "wind_speed": 15,
+      "time_of_day": 17,
+      "weather_condition": "cold_windy",
+      "description": "Cold winter evening with high heating demand"
+    },
+    
+    "rainy_day": {
+      "solar_irradiance": 80,
+      "temperature": 20,
+      "humidity": 95,
+      "battery_level": 55,
+      "power_demand": 110,
+      "wind_speed": 10,
+      "time_of_day": 11,
+      "weather_condition": "rainy",
+      "description": "Rainy day with poor solar conditions"
+    },
+    
+    "peak_demand": {
+      "solar_irradiance": 600,
+      "temperature": 32,
+      "humidity": 50,
+      "battery_level": 80,
+      "power_demand": 250,
+      "wind_speed": 8,
+      "time_of_day": 19,
+      "weather_condition": "clear_evening",
+      "description": "Evening peak demand with multiple energy sources available"
+    },
+    
+    "optimal_conditions": {
+      "solar_irradiance": 900,
+      "temperature": 30,
+      "humidity": 40,
+      "battery_level": 90,
+      "power_demand": 100,
+      "wind_speed": 10,
+      "time_of_day": 13,
+      "weather_condition": "perfect_sunny",
+      "description": "Ideal conditions with all energy sources performing well"
+    },
+    
+    "critical_battery": {
+      "solar_irradiance": 100,
+      "temperature": 12,
+      "humidity": 90,
+      "battery_level": 8,
+      "power_demand": 80,
+      "wind_speed": 3,
+      "time_of_day": 20,
+      "weather_condition": "overcast_cold",
+      "description": "Critical battery level requiring immediate action"
+    }
+  }
+}
