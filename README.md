@@ -15,7 +15,7 @@ The **Dual Energy Source Management System** is an intelligent energy management
 
 ### 🔧 **Key Features**
 
-- **🤖 AI-Driven Optimization**: Neural network-based energy source selection
+- **🤖 AI-Driven Optimization**: Neural network-based energy source selection.
 - **🌡️ Multi-Sensor Integration**: Temperature, humidity, solar irradiance, wind speed monitoring
 - **⚡ Real-time Switching**: Automated relay-controlled energy source switching
 - **📊 Web Dashboard**: Live monitoring and control interface
@@ -552,6 +552,7 @@ Ready to build your own AI-powered energy management system?
 *Last Updated: August 4, 2025*  
 *Version: 1.0.0*  
 *Build Status: ✅ Passing*
+
 
 
 
