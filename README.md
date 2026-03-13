@@ -11,7 +11,7 @@
 
 ## 🎯 **Project Overview**
 
-The **Dual Energy Source Management System** is an intelligent energy management solution that automatically optimizes between **Solar Power**, **Thermal Energy**, and **Battery Backup** using advanced AI algorithms. The system provides real-time decision-making for maximum energy efficiency and sustainability
+The **Dual Energy Source Management System** is an intelligent energy management solution that automatically optimizes between **Solar Power**, **Thermal Energy**, and **Battery Backup** using advanced AI algorithms. The system provides real-time decision-making for maximum energy efficiency and sustainability.......
 
 ### 🔧 **Key Features**
 
